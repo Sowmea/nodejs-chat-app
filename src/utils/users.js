@@ -56,12 +56,9 @@ addUser({
   room: 'Singapore'
 });
 
-console.log(users);
-
-const removedUser = removeUser(1);
-
-const user = getUser(2);
-console.log(user);
-
-const userList = getUsersInRoom('singapore');
-console.log('Users in singapore ', userList);
+module.exports = {
+  addUser,
+  removeUser,
+  getUser,
+  getUsersInRoom
+};
